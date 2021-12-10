@@ -38,7 +38,9 @@ func newPruneCommand() *cobra.Command {
 type pruneCommand struct{}
 
 func (cmd *pruneCommand) Run(args []string) (err error) {
-	reexec()
+	if stop, err := unshare(); stop || err != nil {
+		return err
+	}
 
 	// Create the context.
 	id := identity.NewID()

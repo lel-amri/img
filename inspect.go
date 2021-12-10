@@ -46,7 +46,9 @@ func (cmd *inspectCommand) ValidateArgs(c *cobra.Command, args []string) error {
 }
 
 func (cmd *inspectCommand) Run(args []string) (err error) {
-	reexec()
+	if stop, err := unshare(); stop || err != nil {
+		return err
+	}
 
 	// Get the specified image and target.
 	cmd.image = args[0]

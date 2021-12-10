@@ -53,7 +53,9 @@ type unpackCommand struct {
 }
 
 func (cmd *unpackCommand) Run(args []string) (err error) {
-	reexec()
+	if stop, err := unshare(); stop || err != nil {
+		return err
+	}
 
 	cmd.image = args[0]
 

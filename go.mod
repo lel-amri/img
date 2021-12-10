@@ -18,17 +18,31 @@ require (
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0
 	github.com/genuinetools/reg v0.16.0
+	github.com/gofrs/flock v0.8.1 // indirect
+	github.com/google/uuid v1.3.0 // indirect
+	github.com/gorilla/mux v1.8.0 // indirect
+	github.com/insomniacslk/dhcp v0.0.0-20211026125128-ad197bcd36fd // indirect
 	github.com/mitchellh/hashstructure v1.0.0 // indirect
 	github.com/moby/buildkit v0.7.2
+	github.com/moby/moby v17.12.0-ce-rc1.0.20200227233006-38f52c9fec82+incompatible // indirect
+	github.com/moby/sys/mountinfo v0.5.0 // indirect
+	github.com/moby/vpnkit v0.5.0 // indirect
 	github.com/opencontainers/image-spec v1.0.1
 	github.com/opencontainers/runc v1.0.0-rc9.0.20200221051241-688cf6d43cc4
 	github.com/opentracing-contrib/go-stdlib v0.0.0-20180702182724-07a764486eb1 // indirect
 	github.com/opentracing/opentracing-go v1.0.2 // indirect
 	github.com/pkg/errors v0.9.1
-	github.com/sirupsen/logrus v1.6.0
+	github.com/rootless-containers/rootlesskit v0.14.6 // indirect
+	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	github.com/sirupsen/logrus v1.8.1
+	github.com/songgao/water v0.0.0-20200317203138-2b4b6d7c09d8 // indirect
 	github.com/spf13/cobra v0.0.5
+	github.com/stretchr/testify v1.7.0 // indirect
+	github.com/urfave/cli/v2 v2.3.0 // indirect
 	go.etcd.io/bbolt v1.3.5
+	golang.org/x/net v0.0.0-20211105192438-b53810dc28af // indirect
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
+	golang.org/x/sys v0.0.0-20211107104306-e0b2ad06fe42 // indirect
 	google.golang.org/grpc v1.27.1
 )
 

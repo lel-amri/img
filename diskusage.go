@@ -49,7 +49,9 @@ type diskUsageCommand struct {
 }
 
 func (cmd *diskUsageCommand) Run(args []string) (err error) {
-	reexec()
+	if stop, err := unshare(); stop || err != nil {
+		return err
+	}
 
 	// Create the context.
 	id := identity.NewID()
